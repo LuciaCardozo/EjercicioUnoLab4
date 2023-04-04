@@ -1,0 +1,15 @@
+<div class="d-grid justify-content-center align-items-center" style="width: 100vw; height: 100vh; background-color: #f1f1d7; font-family: cursive;">
+    <div class="d-grid justify-content-center p20">
+        <h4 class="estiloTitle">Ejercicio Uno</h4>
+        <label style="text-align: center;">Suma: <strong>{{resultado}}</strong></label>
+        <label style="text-align: center; margin-bottom: 20px;">Promedio: <strong>{{promedio}}</strong></label>
+        <div class="d-flex justify-content-center">
+            <input class="estiloInput" style="margin-right: 10px;"  type="number" [(ngModel)]="edadUno" placeholder="0">
+            <input class="estiloInput" style="margin-left: 10px;" type="number" [(ngModel)]="edadDos" placeholder="0" >
+        </div>
+        <div class="d-flex justify-content-center p20" style="margin-top: 15px;">
+            <button class="estiloButton" style="margin-right: 15px;" (click)="calcular()">Calcular</button>
+            <button class="estiloButton" style="margin-left: 15px;" (click)="clear()">Limpiar</button>
+        </div>
+    </div>
+</div>
